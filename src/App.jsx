@@ -21,7 +21,7 @@ const ImageCarousel = () => {
       {/* Main Image Display */}
       <div className="relative mb-8">
         <img 
-          src={`/gallery-${currentImage}.jpg`} 
+          src={`/picturam-site/gallery-${currentImage}.jpg`} 
           alt={`Galerie foto ${currentImage} z představení Picturam`} 
           className="w-full h-[600px] object-cover rounded-xl shadow-2xl"
         />
@@ -64,7 +64,7 @@ const ImageCarousel = () => {
             }`}
           >
             <img 
-              src={`/gallery-${num}.jpg`} 
+              src={`/picturam-site/gallery-${num}.jpg`} 
               alt={`Náhled foto ${num}`} 
               className="w-full h-20 object-cover"
             />
@@ -155,7 +155,7 @@ const PicturamWebsite = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/main-hero-image.jpg" 
+            src="/picturam-site/main-hero-image.jpg" 
             alt="Picturam - Současný tanec inspirovaný Poslední večeří" 
             className="w-full h-full object-cover"
           />
@@ -242,7 +242,7 @@ const PicturamWebsite = () => {
           
           <div className="space-y-6">
             <img 
-              src="/performance-scene-1.jpg" 
+              src="/picturam-site/performance-scene-1.jpg" 
               alt="Hlavní scéna z představení Picturam" 
               className="w-full h-[32rem] object-cover rounded-xl shadow-lg"
             />
@@ -256,7 +256,7 @@ const PicturamWebsite = () => {
           {[1, 2, 3, 4].map((num) => (
             <div key={num} className="group">
               <img 
-                src={`/gallery-${num}.jpg`} 
+                src={`/picturam-site/gallery-${num}.jpg`} 
                 alt={`Foto ${num} z představení Picturam`} 
                 className="w-full h-[32rem] object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300"
               />
@@ -409,7 +409,7 @@ const PicturamWebsite = () => {
                 className="w-full h-[32rem] object-cover rounded-xl shadow-lg"
               />
               <img 
-                src="/rehearsal-2.jpg" 
+                src="/picturam-site/rehearsal-2.jpg" 
                 alt="Foto ze zkoušky 2" 
                 className="w-full h-[32rem] object-cover rounded-xl shadow-lg"
               />
