@@ -404,7 +404,7 @@ const PicturamWebsite = () => {
             
             <div className="lg:col-span-1 space-y-6">
               <img 
-                src="public/rehearsal-1.jpg" 
+                src="./rehearsal-1.jpg" 
                 alt="Foto ze zkoušky 1" 
                 className="w-full h-[32rem] object-cover rounded-xl shadow-lg"
               />
