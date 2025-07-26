@@ -310,7 +310,7 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Inspirace</h3>
               <p className="text-gray-700 leading-relaxed">
                 Choreografie vychází z výtvarného umění a zkoumá převedení statického obrazu 
-                do jevištní živé podoby. Inspirací se stal známý obraz <strong>Poslední večeře</strong> 
+                do jevištní živé podoby. Inspirací se stal známý obraz <strong>Poslední večeře </strong> 
                 slavného malíře Leonarda Da Vinci.
               </p>
             </div>
