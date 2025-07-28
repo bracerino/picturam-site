@@ -405,16 +405,19 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
             <h3 className="text-3xl font-bold text-gray-800 mb-6">Technické požadavky</h3>
             <div className="space-y-4 text-gray-700">
               <div className="flex items-start space-x-3">
+                <span className="text-xl">📐</span>
                 <div>
                   <strong>Prostor:</strong> min. 12 × 12 × 6 m
                 </div>
               </div>
               <div className="flex items-start space-x-3">
+                <span className="text-xl">🎵</span>
                 <div>
                   <strong>Zvuk:</strong> reprodukovaná hudba
                 </div>
               </div>
               <div className="flex items-start space-x-3">
+                <span className="text-xl">🪑</span>
                 <div>
                   <strong>Scénografie:</strong> 4× stůl + rekvizity
                 </div>
@@ -471,19 +474,54 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
               </div>
 
               <div>
-                <h3 className="text-3xl font-bold text-gray-800 border-b-4 border-gray-700 pb-3 mb-4">Technické informace</h3>
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border-l-4 border-gray-700 shadow-lg">
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    <strong>Prostor:</strong> min. 12 × 12 × 6 m, černý baletizol, černé výkryty
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    <strong>Scénografie:</strong> 4× stůl o rozměrech 76 × 139 × 60 cm - kovová konstrukce a překližková deska, 
-                    během představení je s nimi manipulováno; dále několik drobnějších rekvizit
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    <strong>Zvuk:</strong> reprodukovaná hudba
-                  </p>
-                  <p className="text-gray-700 italic">
+                <h3 className="text-3xl font-bold text-gray-800 border-b-4 border-gray-700 pb-3 mb-4">Technické požadavky inscenace</h3>
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border-l-4 border-gray-700 shadow-lg space-y-6">
+                  
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Prostor</h4>
+                    <div className="text-gray-700 leading-relaxed space-y-2">
+                      <p><strong>Rozměry:</strong> min 12 × 12 m</p>
+                      <p><strong>Podlaha:</strong> černý baletizol</p>
+                      <p><strong>Výkryty:</strong> černé sametové výkryty po stranách s možností vstupu na jeviště z několika bodů, černý sametový horizont ve dvou kusech - možnost uprostřed rozevřít na mezeru o šířce cca 1 m</p>
+                      <p><strong>Adaptabilita:</strong> lze taktéž adaptovat na nedivadelní prostory</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Scénografie a rekvizity (vše vozíme vlastní)</h4>
+                    <div className="text-gray-700 leading-relaxed space-y-2">
+                      <p><strong>Stoly:</strong> 4× stoly o rozměrech 76 × 139 × 60 cm - kovová konstrukce a překližková deska, nohy stolů jsou podlepeny filcem, aby klouzaly po baletizolu; během představení je s nimi manipulováno</p>
+                      <p><strong>Černo-zlatá látka:</strong> o rozměrech cca 11 × 1,5 m</p>
+                      <p><strong>Tibetská mísa a palička:</strong> mísa je naplněna vodou</p>
+                      <p><strong>Bílá látka:</strong> o rozměrech cca 20 × 1 m</p>
+                      <p><strong>Karafa s červeným vínem:</strong> víno je na konci představení částečně vyléváno, většinu tekutiny ovšem vsákne bílá látka</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Zvuk</h4>
+                    <div className="text-gray-700 leading-relaxed space-y-2">
+                      <p><strong>Živý mix:</strong> odbavuje Sarah Jedličková; v případě její nepřítomnosti lze mít hudbu v jednom tracku na flashdisku (v takovém případě potřebujeme zajistit zvukaře)</p>
+                      <p><strong>Aparatura:</strong> standardní zvuková aparatura divadla + 1 sběrný mikrofon pro snímání zvuku tibetské mísy (pouze v případě živého mixu)</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Světla</h4>
+                    <div className="text-gray-700 leading-relaxed space-y-2">
+                      <p>Na další straně přiložen lightplot z premiéry, jsme ovšem schopni přizpůsobit se technickým možnostem divadla/prostoru</p>
+                      <p><strong>Světelný technik:</strong> v tvůrčím týmu nemáme světelného technika - potřebujeme jej ideálně zajistit, po domluvě jej může zajistit také projekt sám</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Další technika</h4>
+                    <div className="text-gray-700 leading-relaxed">
+                      <p><strong>Hazer</strong></p>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-700 italic pt-4 border-t border-gray-300">
                     Lightplot a další detaily technických požadavků jsou k nalezení v{' '}
                     <a 
                       href="https://docs.google.com/document/d/1j46pklQYYJqYjDM6avl7JyuczVnZjuhz-93g9Sop0ic/edit?tab=t.0" 
@@ -786,6 +824,26 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
             >
               📞 +420 739 740 163
             </a>
+          </div>
+
+          <div className="mt-6 p-4 bg-gray-800 rounded-lg">
+            <h3 className="font-bold text-sm text-gray-300 mb-3">Jazyk / Language</h3>
+            <div className="flex space-x-3">
+              <a 
+                href="https://bracerino.github.io/picturam-site/"
+                className="flex items-center justify-center w-8 h-8 bg-gray-700 hover:bg-gray-600 rounded transition-colors"
+                title="Čeština"
+              >
+                <span className="text-sm font-bold text-white">CZ</span>
+              </a>
+              <a 
+                href="https://bracerino.github.io/en-picturam-site/"
+                className="flex items-center justify-center w-8 h-8 bg-gray-700 hover:bg-gray-600 rounded transition-colors"
+                title="English"
+              >
+                <span className="text-sm font-bold text-white">EN</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
