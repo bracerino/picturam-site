@@ -229,19 +229,47 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
   );
 
   const ScrollIndicator = () => (
-    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center animate-bounce">
-      <div className="flex flex-col items-center space-y-2">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center">
+      <div className="flex flex-col items-center">
+        <p className="text-sm font-light tracking-[0.2em] mb-4 opacity-80">POKRAČUJTE</p>
+        <div className="flex flex-col space-y-2">
+          <svg 
+            className="w-6 h-6 opacity-40"
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+            style={{
+              animation: 'fadeInOut 3s ease-in-out infinite',
+              animationDelay: '0s'
+            }}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+          <svg 
+            className="w-6 h-6 opacity-60"
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+            style={{
+              animation: 'fadeInOut 3s ease-in-out infinite',
+              animationDelay: '0.5s'
+            }}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+          <svg 
+            className="w-6 h-6 opacity-80"
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+            style={{
+              animation: 'fadeInOut 3s ease-in-out infinite',
+              animationDelay: '1s'
+            }}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
         </div>
-        <svg 
-          className="w-6 h-6 opacity-75" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
       </div>
     </div>
   );
@@ -301,14 +329,14 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
       <OverviewSection title="O představení" id="about" delay={100}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="bg-gradient-to-r from-red-50 to-purple-50 p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Premiéra</h3>
-              <p className="text-lg text-gray-700">1. 5. 2023, PONEC - divadlo pro tanec, Praha</p>
+            <div className="bg-gradient-to-r from-gray-700 to-gray-800 p-8 rounded-2xl shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">Premiéra</h3>
+              <p className="text-lg text-gray-200">1. 5. 2023, PONEC - divadlo pro tanec, Praha</p>
             </div>
             
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Inspirace</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-2xl shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">Inspirace</h3>
+              <p className="text-gray-200 leading-relaxed">
                 Choreografie vychází z výtvarného umění a zkoumá převedení statického obrazu 
                 do jevištní živé podoby. Inspirací se stal známý obraz <strong>Poslední večeře </strong> 
                 slavného malíře Leonarda Da Vinci.
@@ -377,19 +405,16 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
             <h3 className="text-3xl font-bold text-gray-800 mb-6">Technické požadavky</h3>
             <div className="space-y-4 text-gray-700">
               <div className="flex items-start space-x-3">
-                <span className="text-xl">📐</span>
                 <div>
                   <strong>Prostor:</strong> min. 12 × 12 × 6 m
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <span className="text-xl">🎵</span>
                 <div>
                   <strong>Zvuk:</strong> reprodukovaná hudba
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <span className="text-xl">🪑</span>
                 <div>
                   <strong>Scénografie:</strong> 4× stůl + rekvizity
                 </div>
@@ -800,6 +825,13 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
             <p className="italic">Inspirováno dílem Leonarda Da Vinci "Poslední večeře"</p>
           </div>
         </footer>
+
+        <style jsx>{`
+          @keyframes fadeInOut {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+          }
+        `}</style>
       </main>
     </div>
   );
