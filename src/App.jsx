@@ -405,19 +405,16 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
             <h3 className="text-3xl font-bold text-gray-800 mb-6">Technické požadavky</h3>
             <div className="space-y-4 text-gray-700">
               <div className="flex items-start space-x-3">
-                <span className="text-xl">📐</span>
                 <div>
                   <strong>Prostor:</strong> min. 12 × 12 × 6 m
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <span className="text-xl">🎵</span>
                 <div>
                   <strong>Zvuk:</strong> reprodukovaná hudba
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <span className="text-xl">🪑</span>
                 <div>
                   <strong>Scénografie:</strong> 4× stůl + rekvizity
                 </div>
