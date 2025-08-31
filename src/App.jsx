@@ -298,7 +298,7 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
               </p>
               <p className="text-lg mb-8 leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
                 Choreografie zkoumá převedení statického obrazu "Poslední večeře"
-                do živé jevištní podoby v současném světě mužského společenství
+                do živé jevištní podoby v současném světě mužského společenství.
               </p>
             </div>
           </div>
