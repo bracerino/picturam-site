@@ -286,9 +286,9 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         
-        <div className="flex-1 flex items-center justify-center relative z-10">
-          <div className="max-w-4xl mx-auto px-8 text-center">
-            
+        <div className="flex-1 flex flex-col relative z-10">
+          <div className="max-w-4xl mx-auto px-8 text-center pt-20 md:pt-32">
+
             <div className="space-y-6">
               <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in drop-shadow-2xl">
                 Picturam
@@ -297,11 +297,12 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
                 Současný tanec inspirovaný dílem Leonarda Da Vinci
               </p>
               <p className="text-lg mb-8 leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
-                Choreografie zkoumá převedení statického obrazu "Poslední večeře" 
+                Choreografie zkoumá převedení statického obrazu "Poslední večeře"
                 do živé jevištní podoby v současném světě mužského společenství
               </p>
             </div>
           </div>
+          <div className="flex-1"></div>
         </div>
         
         <ScrollIndicator />
@@ -572,19 +573,25 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
                   <div className="flex flex-col md:flex-row gap-8">
                     <div className="flex-shrink-0">
                       {selectedPerson.name === "Natálie Matysková" ? (
-                        <img 
-                          src="/picturam-site/natmat.png" 
-                          alt="Natálie Matysková" 
-                          className="w-32 h-32 rounded-full object-cover shadow-lg"
+                        <img
+                          src="/picturam-site/natmat.png"
+                          alt="Natálie Matysková"
+                          className="w-48 h-48 rounded-full object-cover shadow-lg"
                         />
                       ) : selectedPerson.name === "Eva Rezová" ? (
-                        <img 
-                          src="/picturam-site/everez.png" 
-                          alt="Eva Rezová" 
-                          className="w-32 h-32 rounded-full object-cover shadow-lg"
+                        <img
+                          src="/picturam-site/everez.png"
+                          alt="Eva Rezová"
+                          className="w-48 h-48 rounded-full object-cover shadow-lg"
+                        />
+                      ) : selectedPerson.name === "Sarah Jedličková" ? (
+                        <img
+                          src="/picturam-site/sarah_jedlickova.jpg"
+                          alt="Sarah Jedličková"
+                          className="w-48 h-48 rounded-full object-cover shadow-lg"
                         />
                       ) : (
-                        <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 text-sm">
+                        <div className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 text-sm">
                           Foto
                         </div>
                       )}
@@ -731,40 +738,92 @@ Kromě pedagogiky se věnuje produkci tanečních projektů – je výkonnou ře
         return (
           <div className="space-y-8">
             <h2 className="text-4xl font-bold text-gray-800 border-b-4 border-gray-700 pb-3">Film</h2>
-            
+
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-gray-700 mb-4">Trailer</h3>
                 <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                   <iframe
-                    src="https://www.youtube.com/embed/EZF-TwQdalw"
+                    src="https://player.vimeo.com/video/1062869828"
                     title="Picturam - Film Trailer"
                     className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
                   ></iframe>
                 </div>
+                <div className="mt-4 text-center">
+                  <a
+                    href="https://www.csfd.cz/film/1667079-ultima-cena/galerie/plakaty/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 text-white px-6 py-3 rounded-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  >
+                    <span>Více informací na ČSFD</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-md">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-700 pb-2">Ceny</h3>
-                  <div className="bg-gray-50 p-4 rounded-lg text-gray-500 italic">
-                    Informace budou doplněny později
+                  <h3 className="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-700 pb-2">Hrají</h3>
+                  <div className="bg-gray-50 p-4 rounded-lg text-gray-700 mb-4">
+                    <p className="leading-relaxed">Adam Rameš, David Kodys, Jakub Kohout, Jakub Sedláček, Jan Drahokoupil</p>
+                  </div>
+
+                  <h4 className="text-lg font-bold text-gray-800 mb-3 border-b border-gray-300 pb-1">Poděkování</h4>
+                  <div className="bg-gray-50 p-4 rounded-lg text-gray-700 leading-relaxed space-y-2">
+                    <p>Juliana Moska — za výpomoc a konzultace při natáčení</p>
+                    <p>MgA. Markéta Jandová, Ph.D, a prof. Jiří Myslík — za vedení cvičení</p>
+                    <p>Anželika Rybak — za konzultace při postprodukci</p>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-md">
                   <h3 className="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-700 pb-2">Tvůrčí tým filmu</h3>
-                  <div className="bg-gray-50 p-4 rounded-lg text-gray-500 italic">
-                    Informace budou doplněny později
+                  <div className="bg-gray-50 p-4 rounded-lg text-gray-700 leading-relaxed space-y-2">
+                    <p><strong>Námět, režie, choreografie:</strong> Eva Rezová</p>
+                    <p><strong>Kamera:</strong> Kryštof Čížek</p>
+                    <p><strong>Střih:</strong> Mikuláš Svoboda</p>
+                    <p><strong>Zvuk:</strong> Sarah Jedličková</p>
+                    <p><strong>Produkce:</strong> Johana Panenková, Alena Prokopová</p>
+                    <p><strong>Kostýmy:</strong> Polina Akhmetzhanova</p>
+                    <p><strong>Druhá kamera:</strong> Jan Vališ</p>
+                    <p><strong>Asistenti kamery:</strong> George Itzhak, Adéla Mitová</p>
+                    <p><strong>Osvětlovač:</strong> Václav Filáček</p>
                   </div>
                 </div>
+              </div>
 
-                <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-md">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-700 pb-2">Poděkování</h3>
-                  <div className="bg-gray-50 p-4 rounded-lg text-gray-500 italic">
-                    Informace budou doplněny později
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-md">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-700 pb-2">Ocenění</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+                    <div key={num} className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 shadow-lg">
+                      <img
+                        src={`/picturam-site/venec_${num}.png`}
+                        alt={`Věnec ${num}`}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-md">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 border-b-2 border-gray-700 pb-2">Plakát</h3>
+                <div className="flex flex-col items-center space-y-4">
+                  <p className="text-gray-600 text-base">
+                    <strong>Autor plakátu:</strong> Savva Dolomanov
+                  </p>
+                  <div className="w-full max-w-2xl">
+                    <img
+                      src="/picturam-site/plakat_1.jpg"
+                      alt="Plakát filmu Picturam"
+                      className="w-full h-auto object-contain rounded-lg shadow-lg"
+                    />
                   </div>
                 </div>
               </div>
